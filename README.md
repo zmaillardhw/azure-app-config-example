@@ -24,7 +24,7 @@ dotnet add package Azure.Identity -v 1.4.0
 
 2. Configure App Configuration
 
-[Code](Startup.cs)
+[Code](Startup.cs#L14)
 
 App Settings For Azure Function
  - **AppConfigConnStr** - Connection String From Azure App Configuration
@@ -53,7 +53,7 @@ builder.ConfigurationBuilder
 
 3. Configuration Dependency Injection
 
-[Code](Startup.cs)
+[Code](Startup.cs#L36)
 
 ```
 builder.Services.AddAzureAppConfiguration();
