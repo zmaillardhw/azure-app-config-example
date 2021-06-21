@@ -16,15 +16,15 @@
 
 ```
 dotnet add package Microsoft.Azure.AppConfiguration.AspNetCore -v 4.4.0
-dotnet add package Microsoft.FeatureManagement.AspNetCore -v 2.3.0" />
-dotnet add package Microsoft.Azure.Functions.Extensions -v 1.1.0" />
+dotnet add package Microsoft.FeatureManagement.AspNetCore -v 2.3.0
+dotnet add package Microsoft.Azure.Functions.Extensions -v 1.1.0
 dotnet add package Microsoft.Extensions.DependencyInjection.Abstractions -v 3.1.16
 dotnet add package Azure.Identity -v 1.4.0
 ```
 
 2. Configure App Configuration
 
-(Code)[Startup.cs]
+[Code](Startup.cs)
 
 App Settings For Azure Function
  - **AppConfigConnStr** - Connection String From Azure App Configuration
@@ -53,7 +53,7 @@ builder.ConfigurationBuilder
 
 3. Configuration Dependency Injection
 
-(Code)[Startup.cs]
+[Code](Startup.cs)
 
 ```
 builder.Services.AddAzureAppConfiguration();
@@ -61,4 +61,4 @@ builder.Services.AddFeatureManagement();
 ```
 
 4. Use Flags
-(Code)[TestTrigger.cs]
+[Code](TestTrigger.cs)
