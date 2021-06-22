@@ -26,9 +26,6 @@ namespace azureappcfg {
                .UseFeatureFlags()
                .ConfigureKeyVault(kv => kv.SetCredential(new DefaultAzureCredential())))
               .Build();
-
-            System.Console.Out.WriteLine(appEnv);
-            System.Console.Out.WriteLine("here");
         }
 
         public override void Configure(IFunctionsHostBuilder builder)
