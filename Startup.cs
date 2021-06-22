@@ -22,7 +22,7 @@ namespace azureappcfg {
               o.Connect(appConfigConnStr)
                .Select(KeyFilter.Any, LabelFilter.Null)
                .Select(KeyFilter.Any, "protoduction")
-               .Select(KeyFilter.Any, appEnv )
+               //.Select(KeyFilter.Any, appEnv )
                .UseFeatureFlags()
                .ConfigureKeyVault(kv => kv.SetCredential(new DefaultAzureCredential())))
               .Build();
